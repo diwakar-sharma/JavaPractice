@@ -1,0 +1,35 @@
+Why jsp not servlet:
+	UI desinet are not familiar with java coding they are familiar with html.
+
+-- JSP Tags -- 
+Declaration: 
+	whenever we need to write outside service method like writing java method and declaring globle veriable for jsp servlet.
+	<%!   %>
+
+Directive: whenever we need to import external package or other external tag.
+	<%@   %>
+	Different directive:
+	@page : when you want to something for entire page like setting language,package import and exception handling of the page.
+		<%@ page attributeName="attributeValue" attributeName="attributeValue" ...%>
+		attributeName="attributeValue"
+		import="importlist" 
+		language="scripting language(default java)"
+		session= "true|false"
+		contentType="html json image video"
+		extends="class name"
+		autoflush="true|false(if dont want get buffer full)"  
+		errorPage="eeropage url"
+		isErrorPage="true|false"
+
+	@include :when we want to add some external file in jsp.
+		import="filepath"
+
+	@taglib: to add external tag
+ 
+Scriplet: Whatever we write in scriplet will be the part of service method.
+	<%  %>
+
+Expression:Whatever we write in expresion will be set as String in out.println.
+	<%=  %>
+
+Impicit object in jsp(Built In Object): can be used in expression and scriptlet
